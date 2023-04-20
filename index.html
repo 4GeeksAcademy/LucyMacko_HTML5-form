@@ -11,79 +11,108 @@
 <body>
     <div class="container">
         <div class="card mt-3">
-            <div class="card border-1 mt-5 px-0 ps-1">
-                <h5 class="card-header fw-bold bg-light px-0">Payment form example</h4>
-                <div class="card-body">
+            <div class="card px-0">
+                <h5 class="card-header fw-bold bg-light">Payment form example</h4>
+                <div class="card-body pb-0">
+
                     <div class="alert alert-danger" role="alert">
                         Some fields are missing
-                      </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-6">
-                            <label for="exampleInputEmail1" class="form-label">Card #</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="XXXXXXXXXXXXXXXX">
+                            <label for="cardNum" class="form-label">Card #</label>
+                            <input type="text" class="form-control" id="cardNum" aria-describedby="card" placeholder="XXXXXXXXXXXXXXXX">
                         </div>
                         <div class="col-2">
-                            <label for="exampleInputEmail1" class="form-label">CVC #</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="0000">
+                            <label for="securityNum" class="form-label">CVC #</label>
+                            <input type="text" class="form-control" id="securityNum" aria-describedby="security" placeholder="0000">
                         </div>
                         <div class="col-4 justify-content-center">
-                            <label for="exampleInputEmail1" class="form-label ps-3"> Amount</label>
+                            <label for="amnount" class="form-label ps-3"> Amount</label>
                             <div class="input-group mb-3">                                
                                 <span class="input-group-text bg-white border-0 pe-0">$</span>
-                                <input type="text" class="form-control" aria-label="Amount">
+                                <input type="text" class="form-control" aria-label="Amount"placeholder="Amount">
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-6">
                             <div>
                                 <label for="firstName" class="form-label">First Name</label>
                                 <input type="firstName" class="form-control" id="firstName" aria-describedby="name">
                             </div>
-                            <div>
+                            <div class="my-3">
                                 <label for="city" class="form-label">City</label>
                                 <input type="city" class="form-control" id="city" aria-describedby="city">
                             </div>
                             <div class="justify-content-start">
-                                <label for="payment" class="form-label my-2">We accept</label>
-                                <div class="col-5 bg-secondary m-0">
-                                    <div class="form-check form-check-inline m-1">
+                                <p class="my-3">We accept:</p>
+                                <div class="w-50 bg-secondary rounded">
+                                    <div class="form-check form-check-inline ms-4">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                        <i class="fa fa-cc-mastercard"></i>
+                                        <i class="fa fa-cc-mastercard fa-xs fa-xs fa-inverse"></i>
                                         <label class="form-check-label" for="inlineRadio1"></label>
                                     </div>
-                                    <div class="form-check form-check-inline m-1">
+                                    <div class="form-check form-check-inline my-1">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                        <i class="fa fa-cc-visa"></i>
+                                        <i class="fa fa-cc-visa fa-xs fa-inverse"></i>
                                         <label class="form-check-label" for="inlineRadio2"></label>
                                     </div>
-                                    <div class="form-check form-check-inline m-1">
+                                    <div class="form-check form-check-inline my-1">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
-                                        <i class="fa fa-cc-diners-club"></i>
+                                        <i class="fa fa-cc-diners-club fa-xs fa-inverse"></i>
                                         <label class="form-check-label" for="inlineRadio3"></label>
                                     </div>
                                     <div class="form-check form-check-inline m-1">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2">
-                                        <i class="fa fa-cc-amex"></i>
+                                        <i class="fa fa-cc-amex fa-xs fa-inverse"></i>
                                         <label class="form-check-label" for="inlineRadio4"></label>
                                     </div>
                                 </div>
                             </div>
 
-
                         </div>
                         <div class="col-6">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
+                            <div>
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="lastName" class="form-control" id="lastName" aria-describedby="lastName">
+                            </div>
+                            <form class="row g-3">
+                                <div class="col-md-5">
+                                    <label for="inputState" class="form-label mt-3">State</label>
+                                    <select id="inputState" class="form-select">
+                                      <option selected>Pick a state</option>
+                                      <option value="1">Spain</option>
+                                      <option value="2">France</option>
+                                      <option value="3">Italy</option>
+                                    </select>
+                                </div>
+                                  <div class="col-md-5">
+                                    <label for="inputZip" class="form-label mt-3">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                  </div>                                
+                            </form> 
+                                <div class="my-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <p class="fs-6 text-muted fw-light">Add any notes here.</p>
+                            </div>                           
                         </div>
-                    </div>
-                                
-                </div>
-                <div class="card-footer">
-                   <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-            </div>
+                        
+                        <div class="container-fluid px-0">
+                            <div class="card-footer mt-3">
+                                <div class="d-grid d-md-flex justify-content-md-end">
+                                    <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                                    <button class="btn btn-primary" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </div>                        
+
+                    </div>                    
+                </div>            
+            </div>                
         </div>
     </div>
 </body>
